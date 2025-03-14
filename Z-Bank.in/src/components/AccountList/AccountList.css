@@ -1,0 +1,56 @@
+/* src/components/AccountList/AccountList.css */
+.account-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.account-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+.account-item h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.account-item p {
+  margin: 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.account-item button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.account-item button:first-of-type {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.account-item button:first-of-type:hover {
+  background-color: #0056b3;
+}
+
+.account-item button:last-of-type {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.account-item button:last-of-type:hover {
+  background-color: #c82333;
+}

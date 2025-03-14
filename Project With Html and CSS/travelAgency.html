@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #003580;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffc107;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        header nav a:hover {
+            color: #ffc107;
+        }
+
+        .hero-section {
+            background: url('travel.jpg') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-section p {
+            font-size: 24px;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .search-form {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 30px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 1000px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .search-form input, .search-form select, .search-form button {
+            padding: 12px;
+            margin: 8px;
+            width: 22%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-form input:focus, .search-form select:focus {
+            border-color: #003580;
+        }
+
+        .search-form button {
+            background-color: #ffc107;
+            color: #003580;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-form button:hover {
+            background-color: #e0a800;
+        }
+
+        .content {
+            padding: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            color: #003580;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .content .deals {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .content .deals .deal {
+            background-color: white;
+            padding: 20px;
+            width: 30%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .content .deals .deal:hover {
+            transform: translateY(-10px);
+        }
+
+        .content .deals .deal h3 {
+            font-size: 24px;
+            color: #003580;
+            margin-bottom: 10px;
+        }
+
+        .content .deals .deal p {
+            font-size: 18px;
+            color: #777;
+            margin-bottom: 20px;
+        }
+
+        .content .deals .deal button {
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #ffc107;
+            color: #003580;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .content .deals .deal button:hover {
+            background-color: #e0a800;
+        }
+
+        .page-section {
+            margin-bottom: 40px;
+        }
+
+        .image-placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: #ddd;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #666;
+            border-radius: 10px;
+        }
+
+        .highlights {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .highlight-card {
+            background-color: white;
+            padding: 20px;
+            width: 23%;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .highlight-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .highlight-card h3 {
+            font-size: 24px;
+            color: #003580;
+            margin-bottom: 10px;
+        }
+
+        .highlight-card p {
+            font-size: 16px;
+            color: #777;
+        }
+
+        footer {
+            background-color: #003580;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Travel Agency</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div id="home" class="page-section">
+        <div class="hero-section">
+            <div>
+                <h1>Explore Your Amazing City</h1>
+                <p>Find great places to stay, eat, shop, or visit from local experts.</p>
+            </div>
+        </div>
+
+        <div class="search-form">
+            <input type="text" placeholder="From">
+            <input type="text" placeholder="To">
+            <input type="date" id="departureDate" placeholder="Departure">
+            <input type="date" id="returnDate" placeholder="Return">
+            <select>
+                <option>1 Adult</option>
+                <option>2 Adults</option>
+                <option>3 Adults</option>
+            </select>
+            <button>Search</button>
+        </div>
+
+        <div class="content">
+            <h2>Hot Deals</h2>
+            <div class="deals">
+                <div class="deal">
+                    <h3>Paris Getaway</h3>
+                    <p>5 Nights from $999</p>
+                    <button>Book Now</button>
+                </div>
+                <div class="deal">
+                    <h3>New York City</h3>
+                    <p>4 Nights from $799</p>
+                    <button>Book Now</button>
+                </div>
+                <div class="deal">
+                    <h3>Tokyo Adventure</h3>
+                    <p>7 Nights from $1299</p>
+                    <button>Book Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="page-section">
+        <div class="content">
+            <h2>About Us</h2>
+            <p>Welcome to Travel Agency, your one-stop destination for all your travel needs. We specialize in providing the best travel experiences, from flights and hotels to customized vacation packages. Our team of experts is dedicated to making your journey unforgettable.</p>
+            <div class="image-placeholder">Image Placeholder (About Us)</div>
+        </div>
+    </div>
+
+    <div id="services" class="page-section">
+        <div class="content">
+            <h2>Our Services</h2>
+            <p>We offer a wide range of services to make your travel seamless and enjoyable:</p>
+            <ul>
+                <li>Flight Bookings</li>
+                <li>Hotel Reservations</li>
+                <li>Tour Packages</li>
+                <li>Car Rentals</li>
+                <li>Travel Insurance</li>
+            </ul>
+            <div class="image-placeholder">Image Placeholder (Services)</div>
+        </div>
+    </div>
+
+    <div id="highlights" class="page-section">
+        <div class="content">
+            <h2>Why Choose Us?</h2>
+            <div class="highlights">
+                <div class="highlight-card">
+                    <h3>Best Price Guarantee</h3>
+                    <p>A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Travellers Love Us</h3>
+                    <p>A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Best Travel Agent</h3>
+                    <p>A small river named Duden flows by their place and supplies.</p>
+                </div>
+                <div class="highlight-card">
+                    <h3>Our Dedicated Support</h3>
+                    <p>A small river named Duden flows by their place and supplies.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="page-section">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Have questions or need assistance? Reach out to us!</p>
+            <p>Email: info@travelagency.com</p>
+            <p>Phone: +1 123 456 7890</p>
+            <div class="image-placeholder">Image Placeholder (Contact Us)</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Travel Agency. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

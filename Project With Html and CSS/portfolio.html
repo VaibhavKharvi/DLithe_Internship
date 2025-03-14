@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            text-align: center;
+            scroll-behavior: smooth;
+            color: #333;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: linear-gradient(90deg, #2c3e50, #3498db);
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 12px 18px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Section Styling */
+        .container {
+            padding: 120px 30px 30px;
+        }
+
+        .section {
+            background: white;
+            margin: 40px auto;
+            padding: 35px;
+            width: 85%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        /* Project Cards */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-card {
+            background: #fff;
+            width: 350px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            font-size: 24px;
+            color: #3498db;
+        }
+
+        .project-card p {
+            font-size: 18px;
+            color: #666;
+        }
+
+        /* Contact Form */
+        .contact-form input, .contact-form textarea {
+            width: 95%;
+            padding: 12px;
+            margin-top: 12px;
+            border: 2px solid #ccc;
+            border-radius: 6px;
+            font-size: 18px;
+        }
+
+        .contact-form button {
+            margin-top: 20px;
+            padding: 14px 30px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .contact-form button:hover {
+            background: #1f78b4;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            position: relative;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <div id="home" class="container">
+        <div class="section">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello, I'm Vaibhav, a passionate web developer creating stunning web experiences.</p>
+        </div>
+    </div>
+
+    <!-- About Me Section -->
+    <div id="about" class="container">
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I am a web developer with experience in HTML, CSS, JavaScript. I specialize in front-end and back-end development to create responsive and dynamic web applications.</p>
+            <h3 style="font-size: 26px; color: #2c3e50;">Skills:</h3>
+            <ul style="list-style-type: none; font-size: 20px; color: #555;">
+                <li>✔ HTML, CSS, JavaScript</li>
+                <li>✔ Django & Flask</li>
+                <li>✔ React & Vue.js</li>
+                <li>✔ Database Management (MySQL, PostgreSQL)</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Portfolio Section -->
+    <div id="portfolio" class="container">
+        <div class="section">
+            <h2>My Recent Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>📦 E-Commerce Website</h3>
+                    <p>Built a full-fledged online store with shopping cart, authentication, and payment gateway.</p>
+                </div>
+                <div class="project-card">
+                    <h3>📝 Blog Website</h3>
+                    <p>Developed a dynamic blog site with categories, user authentication, and admin panel.</p>
+                </div>
+                <div class="project-card">
+                    <h3>🔍 Search Engine App</h3>
+                    <p>Created a mini search engine to filter and display relevant results using AI.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact" class="container">
+        <div class="section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or project inquiries.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
