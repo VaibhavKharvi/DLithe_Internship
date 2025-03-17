@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        /* Global Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            text-align: center;
+            color: #fff;
+        }
+
+        /* Header & Navigation */
+        header {
+            background: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 20px 0;
+            font-size: 24px;
+            font-weight: bold;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        nav a {
+            margin: 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 12px 18px;
+            border-radius: 6px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Section Styling */
+        .container {
+            padding: 120px 30px 30px;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.1);
+            margin: 40px auto;
+            padding: 35px;
+            width: 85%;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            border-radius: 12px;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            color: #f1f1f1;
+            margin-bottom: 15px;
+        }
+
+        .section p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #ddd;
+        }
+
+        /* Project Cards */
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.2);
+            width: 350px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+            text-align: left;
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-card h3 {
+            font-size: 24px;
+            color: #f1c40f;
+        }
+
+        .project-card p {
+            font-size: 18px;
+            color: #eee;
+        }
+
+        /* Contact Form */
+        .contact-form input, .contact-form textarea {
+            width: 95%;
+            padding: 12px;
+            margin-top: 12px;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .contact-form button {
+            margin-top: 20px;
+            padding: 14px 30px;
+            background: #f1c40f;
+            color: #333;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .contact-form button:hover {
+            background: #d4ac0d;
+        }
+
+        /* Footer */
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            padding: 15px;
+            font-size: 18px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div id="home" class="container">
+        <div class="section">
+            <h2>Welcome to My Portfolio</h2>
+            <p>Hello, I'm Vaibhav, a passionate Web Developer creating stunning web experiences.</p>
+        </div>
+    </div>
+
+    <div id="about" class="container">
+        <div class="section">
+            <h2>About Me</h2>
+            <p>I am a web developer with experience in HTML, CSS, JavaScript. I specialize in front-end and back-end development to create responsive and dynamic web applications.</p>
+        </div>
+    </div>
+
+    <div id="portfolio" class="container">
+        <div class="section">
+            <h2>My Recent Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>📦 E-Commerce Website</h3>
+                    <p>Built a full-fledged online store with shopping cart, authentication, and payment gateway.</p>
+                </div>
+                <div class="project-card">
+                    <h3>📝 Blog Website</h3>
+                    <p>Developed a dynamic blog site with categories, user authentication, and admin panel.</p>
+                </div>
+                <div class="project-card">
+                    <h3>🔍 Search Engine App</h3>
+                    <p>Created a mini search engine to filter and display relevant results using AI.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="contact" class="container">
+        <div class="section">
+            <h2>Contact Me</h2>
+            <p>Feel free to reach out for collaborations or project inquiries.</p>
+            <form class="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea rows="4" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>

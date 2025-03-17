@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e3f2fd;
+            color: #333;
+        }
+
+        header {
+            background-color: #002855;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        header .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffcc00;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        header nav a:hover {
+            color: #ffcc00;
+        }
+
+        .hero-section {
+            background: url('https://source.unsplash.com/1600x900/?travel,nature') no-repeat center center/cover;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+            margin: 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-section p {
+            font-size: 24px;
+            margin: 20px 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        .search-form {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 30px;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 1000px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .search-form input, .search-form select, .search-form button {
+            padding: 12px;
+            margin: 8px;
+            width: 22%;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            outline: none;
+        }
+
+        .search-form button {
+            background-color: #ffcc00;
+            color: #002855;
+            border: none;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .search-form button:hover {
+            background-color: #e6b800;
+        }
+
+        .content {
+            padding: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .content h2 {
+            color: #002855;
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .content .deals .deal:hover {
+            transform: translateY(-10px);
+            background-color: #f0f8ff;
+        }
+
+        .highlight-card:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #002855;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Travel Agency</div>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div id="home" class="page-section">
+        <div class="hero-section">
+            <div>
+                <h1>Explore the World with Us</h1>
+                <p>Your dream destination awaits. Let's make it happen!</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Travel Agency. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,38 @@
+/* src/components/Withdraw/Withdraw.css */
+.withdraw {
+  padding: 20px;
+}
+
+.withdraw h1 {
+  color: #dc3545;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.withdraw form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.withdraw select,
+.withdraw input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.withdraw button {
+  padding: 10px 20px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.withdraw button:hover {
+  background-color: #c82333;
+}

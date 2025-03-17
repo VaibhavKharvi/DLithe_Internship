@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIMES NOW</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, #141e30, #243b55);
+            color: #ffffff;
+        }
+        header {
+            background: linear-gradient(135deg, #ff416c, #ff4b2b);
+            color: #fff;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(44, 62, 80, 0.9);
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #1abc9c;
+        }
+        .content {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .featured, .trending {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .featured article, .trending article {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .featured article:hover, .trending article:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+        }
+        .featured article img, .trending article img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        footer {
+            background-color: rgba(44, 62, 80, 0.9);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TIMES NOW</h1>
+        <p>Your Source for Global Updates</p>
+    </header>
+    <nav>
+        <a href="#">HOME</a>
+        <a href="#">BREAKING NEWS</a>
+        <a href="#">BUSINESS</a>
+        <a href="#">TECHNOLOGY</a>
+        <a href="#">ENTERTAINMENT</a>
+        <a href="#">SPORTS</a>
+        <a href="#">HEALTH</a>
+        <a href="#">SCIENCE</a>
+    </nav>
+    <div class="content">
+        <div class="featured">
+            <article>
+                <img src="images/tech.jpeg" alt="Modern Tech">
+                <h3>The Power of Modern Tech</h3>
+                <p>Discover how technology is shaping the future.</p>
+            </article>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 World News. All rights reserved.</p>
+    </footer>
+</body>
+</html>

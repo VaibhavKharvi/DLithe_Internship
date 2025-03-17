@@ -1,0 +1,38 @@
+/* src/components/Deposit/Deposit.css */
+.deposit {
+  padding: 20px;
+}
+
+.deposit h1 {
+  color: #17a2b8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.deposit form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.deposit select,
+.deposit input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.deposit button {
+  padding: 10px 20px;
+  background-color: #17a2b8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.deposit button:hover {
+  background-color: #138496;
+}
