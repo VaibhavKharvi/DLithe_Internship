@@ -1,0 +1,39 @@
+/* src/components/Counter.css */
+.counter-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+  
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+  
+.count-display {
+    margin: 20px 0;
+}
+  
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+  
+.button {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.button.reset {
+    background-color: #ffcccc; /* Different color for reset button */
+}
+
+.button.reset:hover {
+    background-color: #ffb3b3; /* Lighter color on hover for reset button */
+}
