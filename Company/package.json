@@ -1,0 +1,15 @@
+{
+  "name": "company-database",
+  "version": "1.0.0",
+  "description": "MongoDB schema for a company database",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "setup": "node db/setupDatabase.js"
+  },
+  "dependencies": {
+    "mongodb": "^5.0.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2"
+  }
+} 
